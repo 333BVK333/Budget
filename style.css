@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", serif;
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+.body {
+  width: calc(100vw-40px);
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fd;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.container {
+  width: 60vw;
+  height: 40vh;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.budget {
+  width: 38%;
+  height: 70%;
+  padding: 4%;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.budget h3,
+.expenses h3 {
+  font-size: 28px;
+}
+
+#income,
+#type,
+#expense {
+  width: 90%;
+  height: 25px;
+  padding: 5px 5px 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+}
+
+#income:focus,
+#type:focus,
+#expense:focus {
+  border: 2px solid #6f00ff;
+}
+
+#submit,
+#btn {
+  width: 90px;
+  height: 35px;
+  padding: 5px;
+  margin: 15px 0 0 0;
+  color: white;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: #6f00ff;
+}
+
+.expenses {
+  width: 38%;
+  height: 70%;
+  padding: 4%;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.results {
+  width: 54vw;
+  height: 10vh;
+  padding: 2vh 2vw;
+  background-color: #6f00ff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.heading,
+.result {
+  width: 90%;
+  height: 45%;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content {
+  width: 54vw;
+  padding: 4vh 2vw;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.content h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.details {
+  width: 100%;
+  margin: 15px 0 0 0;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.data {
+  width: 95%;
+  height: 30px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  border-left: 5px solid #6f00ff;
+  justify-content: space-between;
+}
+
+.name {
+  width: 150px;
+  overflow: scroll;
+  margin: 0 0 0 25px;
+}
+
+.data h3 {
+  font-size: 15px;
+}
+
+.icons {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    height: 63vh;
+    flex-direction: column;
+  }
+
+  .budget {
+    width: 90%;
+  }
+
+  .expenses {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .data .name {
+    width: 80px;
+  }
+
+  .budget {
+    width: 80%;
+    height: 60%;
+    padding: 5% 7%;
+  }
+
+  .expenses {
+    width: 80%;
+    height: 60%;
+    padding: 5% 7%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+    .budget {
+        width: 320px;
+        height: 190px;
+    }
+
+    .expenses {
+        width: 320px;
+        height: 240px;
+    }
+
+    .results {
+        width: 320px;
+    }
+
+    .content {
+        width: 320px;
+    }
+
+    .content h3 {
+        margin: 0 0 0 8px;
+    }
+}
